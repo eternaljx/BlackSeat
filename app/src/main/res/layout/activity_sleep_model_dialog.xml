@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:padding="20dp">
+
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_main_alert_corner">
+
+        <RelativeLayout
+            android:id="@+id/rl_sleep_model_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/iv_icon_main_alert_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_main_alert_save" />
+
+            <ImageView
+                android:id="@+id/iv_icon_main_alert_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_icon_main_alert_save"
+                android:background="@drawable/icon_main_alert_delete" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_sleep_model_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/main_tubiao_unselect"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/rl_sleep_model_dialog"
+            android:text="长按5秒存储" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

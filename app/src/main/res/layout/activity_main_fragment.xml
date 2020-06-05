@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main">
+
+    <ImageView
+        android:id="@+id/iv_main_fragment_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/bg_main_seat_bottom" />
+
+    <ImageView
+        android:id="@+id/iv_main_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/bg_main_seat" />
+
+    <RelativeLayout
+        android:id="@+id/rl_sleep_model_alert"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginBottom="4dp"
+        android:visibility="invisible"
+        android:layout_above="@+id/rl_sleep_model_one"
+        android:background="@drawable/shape_main_alert_corner">
+
+        <RelativeLayout
+            android:id="@+id/rl_sleep_model_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/iv_icon_main_alert_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_main_alert_save" />
+
+            <ImageView
+                android:id="@+id/iv_icon_main_alert_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_icon_main_alert_save"
+                android:background="@drawable/icon_main_alert_delete" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_sleep_model_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/main_tubiao_unselect"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/rl_sleep_model_dialog"
+            android:text="长按5秒存储" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sleep_model_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="60dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_sleep_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_sleep_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_main_sleep" />
+
+            <TextView
+                android:id="@+id/tv_sleep_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_sleep_model"
+                android:layout_marginTop="4dp"
+                android:text="睡眠模式"
+                android:textColor="@color/main_tubiao_unselect" />
+
+            <TextView
+                android:id="@+id/tv_sleep_model_englishname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sleep_model"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:text="sleep"
+                android:textColor="@color/main_tubiao_unselect" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_one_keyreset_alert"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="4dp"
+        android:visibility="invisible"
+        android:layout_above="@+id/rl_one_keyreset"
+        android:background="@drawable/shape_main_alert_corner">
+
+        <RelativeLayout
+            android:id="@+id/rl_one_keyreset_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/iv_icon_one_keyreset_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_main_alert_save" />
+
+            <ImageView
+                android:id="@+id/iv_icon_one_keyreset_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_icon_one_keyreset_save"
+                android:background="@drawable/icon_main_alert_delete" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_one_keyreset_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/main_tubiao_unselect"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/rl_one_keyreset_dialog"
+            android:text="长按5秒存储" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_one_keyreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="60dp">
+
+        <ImageView
+            android:id="@+id/iv_one_keyreset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/icon_main_onekeyreset" />
+
+        <TextView
+            android:id="@+id/tv_one_keyreset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/iv_one_keyreset"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:text="一键复位"
+            android:textColor="@color/main_tubiao_unselect" />
+
+        <TextView
+            android:id="@+id/iv_one_keyreset_englishname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_one_keyreset"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:text="Reset"
+            android:textColor="@color/main_tubiao_unselect" />
+    </RelativeLayout>
+</RelativeLayout>

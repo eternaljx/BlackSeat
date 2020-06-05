@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_main_fragment_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dp"
+        android:background="@drawable/bg_main_seat_bottom" />
+
+    <ImageView
+        android:id="@+id/iv_seat_adjust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/bg_adjust" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/v_seat_kaobei_click"
+            android:layout_width="80dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="126dp" />
+
+        <ImageView
+            android:id="@+id/v_seat_kaobei_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="126dp"
+            android:background="@drawable/icon_seat_kaobei_selected"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_seat_kaobei_left"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="170dp" />
+
+    <View
+        android:id="@+id/v_seat_kaobei_right"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp" />
+
+    <ImageView
+        android:id="@+id/v_seat_kaobei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="186dp"
+        android:background="@drawable/icon_seat_kaobei_default"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_seat_adjust"
+        android:layout_centerHorizontal="true">
+
+        <View
+            android:id="@+id/v_seat_before_click"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="70dp" />
+
+        <View
+            android:id="@+id/v_seat_after_click"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="70dp" />
+
+        <ImageView
+            android:id="@+id/iv_seat_qianhou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/icon_seat_qianhou" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="280dp">
+
+        <View
+            android:id="@+id/v_seat_tuituo_click"
+            android:layout_width="30dp"
+            android:layout_height="70dp" />
+
+        <ImageView
+            android:id="@+id/v_seat_tuituo_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_seat_tuituo_selected"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_seat_tuituo_left_click"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="140dp"
+        android:layout_marginTop="315dp" />
+
+    <View
+        android:id="@+id/v_seat_tuituo_right_click"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="315dp" />
+
+    <ImageView
+        android:id="@+id/iv_seat_tuituo_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="57dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/icon_seat_tuituo_default"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/v_seat_touzhen_click"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="125dp" />
+
+        <ImageView
+            android:id="@+id/v_seat_touzhen_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="125dp"
+            android:background="@drawable/icon_seat_touzhen_selected"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_seat_touzhen_top_click"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="119dp" />
+
+    <View
+        android:id="@+id/v_seat_touzhen_bottom_click"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="160dp" />
+
+    <ImageView
+        android:id="@+id/iv_seat_touzhen_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="119dp"
+        android:background="@drawable/icon_seat_touzhen_default"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/v_seat_yaozhen_click"
+        android:layout_width="25dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="134dp"
+        android:layout_marginTop="205dp" />
+
+    <ImageView
+        android:id="@+id/v_seat_yaozhen_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="134dp"
+        android:layout_marginTop="205dp"
+        android:background="@drawable/icon_seat_yaozhen_selected"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/v_seat_yaozhen_top_click"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="197dp" />
+
+    <View
+        android:id="@+id/v_seat_yaozhen_bottom_click"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="260dp" />
+
+    <View
+        android:id="@+id/v_seat_yaozhen_left_click"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="229dp" />
+
+    <View
+        android:id="@+id/v_seat_yaozhen_right_click"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginLeft="157dp"
+        android:layout_marginTop="218dp" />
+
+    <ImageView
+        android:id="@+id/iv_seat_yaozhen_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="198dp"
+        android:background="@drawable/icon_seat_yaozhen_default"
+        android:visibility="invisible" />
+
+</RelativeLayout>

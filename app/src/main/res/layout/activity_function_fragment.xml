@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main">
+
+    <ImageView
+        android:id="@+id/iv_main_fragment_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/bg_main_seat_bottom" />
+
+    <ImageView
+        android:id="@+id/iv_vebient_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/icon_vebient_shadow"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_vebient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/bg_function_seat"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_heating_onegear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_heating_onegear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/image_heating_onegear" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_heating_onegear_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_heating_onegear_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/image_heating_onegear" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_massage_onegear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_massage_onegear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/image_massage_left_onegear" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ventilation_onegear_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_ventilation_onegear_top"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/image_ventilation_onegear" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ventilation_onegear_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_ventilation_onegear_bottom"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/image_ventilation_onegear" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_function_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:layout_marginTop="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_heating_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_heating_model_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_heating_circle_gear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/icon_circle_onegear"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_heating_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_heating_circle_gear"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/icon_function_heating" />
+
+                <ImageView
+                    android:id="@+id/iv_heating_model_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/icon_function_heating_selected"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_heating_model_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_heating_model_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:text="加热"
+                android:textColor="@color/main_tubiao_unselect"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_heating_model_englishname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_heating_model_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:text="Heating"
+                android:textColor="@color/main_tubiao_unselect"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ventilation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_toRightOf="@+id/rl_heating_model">
+
+            <RelativeLayout
+                android:id="@+id/rl_ventilation_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/iv_ventilation_circle_gear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/icon_circle_onegear"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_ventilation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_ventilation_circle_gear"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/icon_function_ventilation" />
+
+                <ImageView
+                    android:id="@+id/iv_ventilation_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/icon_function_ventilation_selected"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_ventilation_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_ventilation_left"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:text="通风"
+                android:textColor="@color/main_tubiao_unselect"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_ventilation_englishname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_ventilation_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:text="Ventilation"
+                android:textColor="@color/main_tubiao_unselect"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_massage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_toRightOf="@+id/rl_ventilation">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_massage_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_massage_circle_gear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/icon_circle_massage_onegear"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_massage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_massage_circle_gear"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/icon_function_massage" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_massage_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_massage_image"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="按摩"
+                    android:textColor="@color/main_tubiao_unselect"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_massage_englishname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_massage_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Massage"
+                    android:textColor="@color/main_tubiao_unselect"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ambient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_toRightOf="@+id/rl_massage">
+
+            <RelativeLayout
+                android:id="@+id/rl_ambient_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_ambient_circle_gear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/icon_circle_massage_onegear"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_ambient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_ambient_circle_gear"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/icon_function_ambient" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_ambient_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_ambient_left"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:text="氛围灯"
+                android:textColor="@color/main_tubiao_unselect"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_ambient_englishname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_ambient_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:text="Ambient"
+                android:textColor="@color/main_tubiao_unselect"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
